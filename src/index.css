@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter_18pt-Light.ttf");
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("../public/fonts/Sora-Bold.ttf");
+}
+
+@theme {
+  --color-blue: #3D5AFE;
+  --color-light: #ebe7eb;
+  --color-background: #f2f0f1;
+  --color-card: #d8d8d8;
+  --color-dark: #1f1f1f;
+  --font-inter: "Inter", sans-serif;
+  --font-sora: "Sora", sans-serif;
+  --background-image-hero-overlay: radial-gradient( circle at left, rgba(235, 231, 235, 0.75) 0%, rgba(235, 231, 235, 0.35) 35%,transparent 70%);
+  --grid-template-columns-numbered-item: auto 1fr;
+}
