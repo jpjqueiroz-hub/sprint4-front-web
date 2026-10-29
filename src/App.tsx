@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import Solucao from "./components/Solucao"
 import Publico from "./components/Publico"
 import Galeria from "./components/Galeria"
+import Equipe from "./components/Equipe"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Solucao />
       <Publico />
       <Galeria />
+      <Equipe />
     </>
   )
 }

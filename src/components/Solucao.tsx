@@ -12,7 +12,7 @@ function Solucao() {
             </h2>
           </div>
   
-          <p className="w-full font-inter text-lg leading-relaxed text-dark md:w-11/12 md:text-xl lg:w-9/10 lg:text-2xl">
+          <p className="w-full font-inter text-lg leading-relaxed text-dark md:w-11/12 md:text-xl lg:w-9/10 lg:text-lg">
             O JOVI Elevra propõe transformar a câmera do smartphone em um
             assistente acadêmico inteligente, capaz de reconhecer o contexto do
             conteúdo fotografado e auxiliar o estudante durante seus estudos.

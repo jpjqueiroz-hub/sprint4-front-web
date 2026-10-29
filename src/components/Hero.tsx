@@ -32,7 +32,7 @@ function Hero() {
   <div className="absolute inset-0 bg-hero-overlay"></div>
 
   <div className="relative z-1 flex w-full flex-col items-start gap-8">
-    <h2 className="max-w-48 font-sora text-4xl leading-tight text-elevra-dark md:max-w-80 md:text-6xl lg:max-w-5xl lg:text-7xl">
+    <h2 className="max-w-48 font-sora text-title leading-tight text-dark md:max-w-80  lg:max-w-5xl">
       Aponte, Capture e Aprenda
     </h2>
 
