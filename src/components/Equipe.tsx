@@ -1,6 +1,6 @@
 function Equipe() {
     return (
-      <section id="equipe"className="min-h-screen scroll-mt-20 bg-light px-6 py-16 text-dark md:px-8 md:py-20 lg:px-12 lg:py-24">
+      <section id="equipe"className="min-h-screen scroll-mt-20 bg-background px-6 py-16 text-dark md:px-8 md:py-20 lg:px-12 lg:py-24">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 lg:gap-16">
           <div className="flex flex-col items-center gap-6 text-center">
             <p className="font-inter text-lg font-semibold text-blue">
@@ -13,7 +13,7 @@ function Equipe() {
           </div>
   
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-6">
-            <article className="flex flex-col gap-8 rounded-2xl bg-background p-8 md:p-10 lg:col-span-2">
+            <article className="flex flex-col gap-8 rounded-2xl bg-light p-8 md:p-10 lg:col-span-2">
               <div className="flex flex-col gap-3">
                 <h3 className="font-sora text-2xl md:text-3xl">
                   Fernando
@@ -30,7 +30,7 @@ function Equipe() {
               </p>
             </article>
   
-            <article className="flex flex-col gap-8 rounded-2xl bg-background p-8 md:p-10 lg:col-span-2">
+            <article className="flex flex-col gap-8 rounded-2xl bg-light p-8 md:p-10 lg:col-span-2">
               <div className="flex flex-col gap-3">
                 <h3 className="font-sora text-2xl md:text-3xl">
                   Gabriel
@@ -47,7 +47,7 @@ function Equipe() {
               </p>
             </article>
   
-            <article className="flex flex-col gap-8 rounded-2xl bg-background p-8 md:p-10 lg:col-span-2">
+            <article className="flex flex-col gap-8 rounded-2xl bg-light p-8 md:p-10 lg:col-span-2">
               <div className="flex flex-col gap-3">
                 <h3 className="font-sora text-2xl md:text-3xl">
                   Guilherme
@@ -64,7 +64,7 @@ function Equipe() {
               </p>
             </article>
   
-            <article className="flex flex-col gap-8 rounded-2xl bg-background p-8 md:p-10 lg:col-span-2 lg:col-start-2">
+            <article className="flex flex-col gap-8 rounded-2xl bg-light p-8 md:p-10 lg:col-span-2 lg:col-start-2">
               <div className="flex flex-col gap-3">
                 <h3 className="font-sora text-2xl md:text-3xl">
                   João
@@ -81,7 +81,7 @@ function Equipe() {
               </p>
             </article>
   
-            <article className="flex flex-col gap-8 rounded-2xl bg-background p-8 md:p-10 lg:col-span-2 lg:col-start-4">
+            <article className="flex flex-col gap-8 rounded-2xl bg-light p-8 md:p-10 lg:col-span-2 lg:col-start-4">
               <div className="flex flex-col gap-3">
                 <h3 className="font-sora text-2xl md:text-3xl">
                   Nícolas

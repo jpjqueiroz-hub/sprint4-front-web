@@ -46,6 +46,11 @@ function Header() {
             </a>
           </li>
           <li>
+            <a href="#prototipo" onClick={fecharMenu} className="font-inter text-base text-dark transition-colors hover:text-blue">
+              Prototipo
+            </a>
+          </li>
+          <li>
             <a href="#equipe" onClick={fecharMenu} className="font-inter text-base text-dark transition-colors hover:text-blue">
               Equipe
             </a>
@@ -53,11 +58,6 @@ function Header() {
           <li>
             <a href="#contato" onClick={fecharMenu} className="font-inter text-base text-dark transition-colors hover:text-blue">
               Contato
-            </a>
-          </li>
-          <li>
-            <a href="#prototipo" onClick={fecharMenu} className="font-inter text-base text-dark transition-colors hover:text-blue">
-              Protótipo
             </a>
           </li>
         </ul>

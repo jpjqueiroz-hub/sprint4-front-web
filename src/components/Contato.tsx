@@ -1,6 +1,6 @@
 function Contato() {
     return (
-      <section id="contato"className="min-h-screen scroll-mt-20 bg-background px-6 py-16 text-dark md:px-8 md:py-20 lg:px-12 lg:py-24"
+      <section id="contato"className="min-h-screen scroll-mt-20 bg-light px-6 py-16 text-dark md:px-8 md:py-20 lg:px-12 lg:py-24"
 >
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col gap-10">
@@ -105,7 +105,7 @@ function Contato() {
             </div>
           </div>
   
-          <div className="rounded-2xl bg-light p-6 md:p-10">
+          <div className="rounded-2xl bg-background p-6 md:p-10">
             <form name="form-contato" id="form-contato" method="get" action="">
                 <fieldset className="rounded-2xl border-0 p-4 md:p-6">
                     <legend className="px-2 font-sora text-2xl text-dark">Envie sua mensagem</legend>
@@ -113,17 +113,17 @@ function Contato() {
                     <div className="grid gap-6">
                     <div>
                         <label htmlFor="nome" className="mb-2 ml-2 block font-inter text-lg text-dark">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" maxLength={100} required className="w-full rounded-lg border border-card bg-background px-4 py-3 font-inter text-base" />
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" maxLength={100} required className="w-full rounded-lg border border-card bg-light px-4 py-3 font-inter text-base" />
                     </div>
 
                     <div>
                         <label htmlFor="email" className="mb-2 ml-2 block font-inter text-lg text-dark">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" maxLength={100} required className="w-full rounded-lg border border-card bg-background px-4 py-3 font-inter text-base" />
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" maxLength={100} required className="w-full rounded-lg border border-card bg-light px-4 py-3 font-inter text-base" />
                     </div>
 
                     <div>
                         <label htmlFor="mensagem" className="mb-2 ml-2 block font-inter text-lg text-dark">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" maxLength={1000} required className="h-40 w-full rounded-lg border border-card bg-background px-4 py-3 font-inter text-base" />
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" maxLength={1000} required className="h-40 w-full rounded-lg border border-card bg-light px-4 py-3 font-inter text-base" />
                     </div>
 
                     <button type="submit" className="cursor-pointer rounded-lg border-2 border-blue bg-blue px-6 py-4 font-inter text-lg font-semibold text-light hover:bg-transparent hover:text-blue">Enviar mensagem</button>
