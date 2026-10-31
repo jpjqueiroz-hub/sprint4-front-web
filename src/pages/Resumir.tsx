@@ -1,9 +1,10 @@
 import { useState } from "react"
-import { Link, useNavigate } from "react-router"
+import { Link, useNavigate, useSearchParams } from "react-router"
 
 function Resumir() {
+  const [parametros] = useSearchParams()
   const [menuAberto, setMenuAberto] = useState(false)
-  const [painelAberto, setPainelAberto] = useState(false)
+  const [painelAberto, setPainelAberto] = useState(parametros.get("abrir") === "resumo")
   const [painelExpandido, setPainelExpandido] = useState(false)
   const navigate = useNavigate()
 

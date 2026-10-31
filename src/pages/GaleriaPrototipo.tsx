@@ -1,9 +1,12 @@
 import { useState } from "react"
 import { Link, useNavigate } from "react-router"
+import useConteudos from "../hooks/useConteudos"
+import CardConteudo from "../components/CardConteudo"
 
 function GaleriaPrototipo() {
   const [telaAtual, setTelaAtual] = useState("fotos")
   const navigate = useNavigate()
+  const { conteudos, carregando, erro } = useConteudos()
 
   function voltar() {
     if (telaAtual === "estudos") {
@@ -65,23 +68,42 @@ function GaleriaPrototipo() {
               </div>
             )}
 
-            {telaAtual === "estudos" && (
-              <div>
-                <div className="grid grid-cols-3 gap-2">
-                  <Link to="/prototipo/camera?abrir=resolucao" className="flex flex-col gap-2">
-                    <img src="/prototipo/images/matemática.png" alt="Consultar resolução do exercício de matemática" className="aspect-square w-full object-cover" />
-                  </Link>
+              {telaAtual === "estudos" && (
+                <div>
+                  {carregando && (
+                    <p className="text-sm text-neutral-600">
+                      Carregando seus estudos...
+                    </p>
+                  )}
 
-                  <Link to="/prototipo/explicar?abrir=explicacao" className="flex flex-col gap-2">
-                    <img src="/prototipo/images/abaporu.png" alt="Consultar explicação sobre Abaporu" className="aspect-square w-full object-cover" />
-                  </Link>
+                  {erro && (
+                    <p role="alert" className="text-sm text-red-700">
+                      {erro}
+                    </p>
+                  )}
 
-                  <Link to="/prototipo/resumir?abrir=resumo" className="flex flex-col gap-2">
-                    <img src="/prototipo/images/lousa.png" alt="Consultar resumo sobre as Grandes Navegações" className="aspect-square w-full object-cover" />
-                  </Link>
+                  {!carregando && !erro && conteudos.length === 0 && (
+                    <p className="text-sm text-neutral-600">
+                      Nenhum conteúdo encontrado.
+                    </p>
+                  )}
+
+                  {!carregando && !erro && (
+                    <div className="grid grid-cols-2 gap-3">
+                      {conteudos.map((conteudo) => (
+                        <CardConteudo
+                          key={conteudo.id}
+                          titulo={conteudo.titulo}
+                          disciplina={conteudo.disciplina}
+                          tipo={conteudo.tipo}
+                          imagem={conteudo.imagem}
+                          rota={conteudo.rota}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
-              </div>
-            )}
+              )}
           </div>
 
           <div className="flex shrink-0 justify-center gap-12 border-t border-neutral-200 px-4 py-4">

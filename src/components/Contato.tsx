@@ -23,7 +23,7 @@ function Contato() {
               <h3 className="font-sora text-2xl">
                 E-mail
               </h3>
-              <a href="mailto:devspark@email.com" className="font-inter text-lg transition-colors hover:text-blue">
+              <a href="mailto:devspark@email.com" className="font-inter text-lg transition hover:text-blue">
                 devspark@email.com
               </a>
             </div>
@@ -41,22 +41,22 @@ function Contato() {
   
                   <ul className="flex flex-col gap-3 font-inter text-lg">
                     <li>
-                      <a href="https://github.com/FChelottiDev" className="transition-colors hover:text-blue">
+                      <a href="https://github.com/FChelottiDev" className="transition hover:text-blue">
                         Fernando
                       </a>
                     </li>
                     <li>
-                      <a href="https://github.com/gabmelolopes" className="transition-colors hover:text-blue">
+                      <a href="https://github.com/gabmelolopes" className="transition hover:text-blue">
                         Gabriel
                       </a>
                     </li>
                     <li>
-                      <a href="https://github.com/Guilherme-Alvim-dev" className="transition-colors hover:text-blue">
+                      <a href="https://github.com/Guilherme-Alvim-dev" className="transition hover:text-blue">
                         Guilherme
                       </a>
                     </li>
                     <li>
-                      <a href="https://github.com/jpjqueiroz-hub" className="transition-colors hover:text-blue">
+                      <a href="https://github.com/jpjqueiroz-hub" className="transition hover:text-blue">
                         João
                       </a>
                     </li>
