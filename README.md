@@ -123,4 +123,4 @@ A inteligência artificial foi utilizada como ferramenta de apoio na criação e
 ## Links do projeto
 
 - Repositório GitHub: **https://github.com/jpjqueiroz-hub/sprint4-front-web**.
-- Deploy na Vercel: **inserir o link após a publicação**.
+- Deploy na Vercel: **https://sprint4-front-web-nine.vercel.app**.
